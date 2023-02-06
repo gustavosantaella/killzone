@@ -1,0 +1,9 @@
+C:\Users\Admin\Documents\godot\.mono\temp\bin\Debug\KillZone.dll
+C:\Users\Admin\Documents\godot\.mono\temp\bin\Debug\KillZone.pdb
+C:\Users\Admin\Documents\godot\.mono\temp\obj\Debug\KillZone.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\godot\.mono\temp\obj\Debug\KillZone.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\godot\.mono\temp\obj\Debug\KillZone.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\godot\.mono\temp\obj\Debug\KillZone.AssemblyInfo.cs
+C:\Users\Admin\Documents\godot\.mono\temp\obj\Debug\KillZone.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\godot\.mono\temp\obj\Debug\KillZone.dll
+C:\Users\Admin\Documents\godot\.mono\temp\obj\Debug\KillZone.pdb
