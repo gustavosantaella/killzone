@@ -8,16 +8,18 @@ var direction : Vector2
 export var jump_time  := 0.3
 export var pixel_by_m := 67
 export var health := 100
+export var damage :=10
 
 var is_jumping:bool = false
 var is_shooting:bool = false
 var is_dead:bool = false
+var can_be_attack:bool= false
 
 var jump_distance = 2 * pixel_by_m
 var jump_force = (-2 * jump_distance) / jump_time
 var fast := 3.5 * pixel_by_m
 var GRAVITY = (2 * jump_distance) / pow(jump_time, 2)
-
+var enemy = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -60,17 +62,27 @@ func shoot():
 	elif !is_pressed and is_shooting:
 		is_shooting = false
 		player.play("initial")
+	if enemy and is_shooting:
+			enemy.damage(damage)
 		
 func damage(value):
-	if health == 0:
-		print("you are dead")
-		is_dead = true
-		return
 	health -= value
-	print(health)
+	if health <= 0 and !is_dead:
+		print("Player is dead")
+		is_dead = true
+		player.play("dead")
+		health = 0
+		return
 	
 func _process(_delta):
 	if is_dead:
 		player.play("dead")
-	
 
+func _on_Area2D_area_shape_entered(_area_rid, _area, _area_shape_index, _local_shape_index):
+	if _area.get_parent().is_in_group("enemies"):
+		can_be_attack = true
+		enemy = _area.get_parent()
+
+func _on_Area2D_area_exited(area):
+	can_be_attack = false
+	enemy = null

@@ -59,15 +59,17 @@ margin_bottom = 602.0
 texture = ExtResource( 2 )
 expand = true
 
-[node name="Solder1" parent="." instance=ExtResource( 3 )]
+[node name="Solder1" parent="." groups=["players"] instance=ExtResource( 3 )]
 position = Vector2( -382, 403 )
 collision_mask = 0
 jump_time = 2.0
+damage = 20
 
 [node name="Enemy1" parent="." groups=["enemies"] instance=ExtResource( 5 )]
-position = Vector2( 8, 420 )
+position = Vector2( 334, 423 )
 collision_layer = 0
 player_node = NodePath("../Solder1")
+damage = 3
 
 [node name="Health_Bar" parent="." instance=ExtResource( 4 )]
 player_node = NodePath("../Solder1")
