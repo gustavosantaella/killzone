@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "lz8sV4C9XV67PChYt7Bc4pxCDWcDr4KI6wme/heq011iI6n0yktBoDS74tkdeLr8Y3EX2MTSq+mLcCZic7kZ8A==",
+  "dgSpecHash": "opajO9CON7URndSNnkNIjJ+jjhp9HahUAKKqOX8JtQWK+9aTMx9pNsyv4V1h3lZGh2XWGM01Lg84B+DyOJ9WqQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Windows10\\Desktop\\projects\\godot\\killzone\\KillZone.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Documents\\godot\\KillZone.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Windows10\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.2\\microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
-    "C:\\Users\\Windows10\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net472\\1.0.2\\microsoft.netframework.referenceassemblies.net472.1.0.2.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.2\\microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net472\\1.0.2\\microsoft.netframework.referenceassemblies.net472.1.0.2.nupkg.sha512"
   ],
   "logs": []
 }

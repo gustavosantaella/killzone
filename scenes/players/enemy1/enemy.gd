@@ -25,7 +25,7 @@ func _ready():
 	enemy.play("initial")
 	enemy.get_parent().position.x = rand_range(-200, 500)
 	fast = rand_range(3,10) * pixel_by_m
-	damage = rand_range(3, 20)
+	damage = rand_range(3, 45)
 	pass # Replace with function body.
 
 
@@ -83,6 +83,8 @@ func damage(value:float):
 		print('Ememy is dead')
 		is_dead = true
 		enemy.get_parent().get_node("CollisionShape2D").disabled = true
+		enemy.get_parent().get_node("Area2D/CollisionShape2D").disabled = true
+		enemy.get_parent().get_node("Area2D/attack").disabled = true
 		enemy.play("dead")
 		yield(get_tree().create_timer(1), 'timeout')
 		self.get_parent().add_child(node_copy, true)

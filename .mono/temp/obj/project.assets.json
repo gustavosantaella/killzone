@@ -415,19 +415,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Windows10\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Windows10\\Desktop\\projects\\godot\\killzone\\KillZone.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Documents\\godot\\KillZone.csproj",
       "projectName": "KillZone",
-      "projectPath": "C:\\Users\\Windows10\\Desktop\\projects\\godot\\killzone\\KillZone.csproj",
-      "packagesPath": "C:\\Users\\Windows10\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Windows10\\Desktop\\projects\\godot\\killzone\\.mono\\temp\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Documents\\godot\\KillZone.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Documents\\godot\\.mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Windows10\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net472"

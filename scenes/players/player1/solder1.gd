@@ -8,7 +8,7 @@ var direction : Vector2
 export var jump_time  := 0.3
 export var pixel_by_m := 67
 export var health := 100
-export var damage :=10
+export var damage :=5
 
 var is_jumping:bool = false
 var is_shooting:bool = false

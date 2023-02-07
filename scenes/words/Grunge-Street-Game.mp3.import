@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Grunge-Street-Game.mp3-63ee0499e9ef4382f347afad5c89a8a1.mp3str"
+
+[deps]
+
+source_file="res://scenes/words/Grunge-Street-Game.mp3"
+dest_files=[ "res://.import/Grunge-Street-Game.mp3-63ee0499e9ef4382f347afad5c89a8a1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
