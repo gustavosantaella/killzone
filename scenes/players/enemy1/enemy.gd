@@ -1,6 +1,7 @@
 extends KinematicBody2D
 
 onready var enemy := $Player
+onready var audio :=  $auido
 var velocity : Vector2
 var direction : Vector2
 
@@ -32,6 +33,7 @@ func _ready():
 func _physics_process(_delta):
 	if is_dead:
 		direction.x = 0
+		audio.stop()
 		return
 	velocity.x = direction.x * fast
 	velocity = move_and_slide(velocity)
@@ -41,6 +43,7 @@ func _process(_delta):
 	if !node_copy:
 		node_copy = self.duplicate()
 	if player.is_dead:
+		audio.play()
 		enemy.play("initial")
 
 func _on_Area2D_area_shape_entered(_area_rid, _area, _area_shape_index, _local_shape_index):
@@ -67,6 +70,7 @@ func _on_Area2D_area_shape_exited(_area_rid, _area, _area_shape_index, _local_sh
 		
 	if _local_shape_index == 1:
 		enemy.play("initial")
+		audio.stop()
 		direction.x = 0
 	else:
 		is_attack = false
@@ -74,6 +78,7 @@ func _on_Area2D_area_shape_exited(_area_rid, _area, _area_shape_index, _local_sh
 func followPlayer():
 	if is_dead:
 		return 
+	audio.play()	
 	direction = (player.position - position).normalized()
 	enemy.flip_h = !(direction.x > 0 )
 	enemy.play("run")
@@ -88,6 +93,8 @@ func damage(value:float):
 		enemy.play("dead")
 		yield(get_tree().create_timer(1), 'timeout')
 		self.get_parent().add_child(node_copy, true)
+		remove_child(audio)
+		queue_free()
 		node_copy = null
 		health = 0
 		

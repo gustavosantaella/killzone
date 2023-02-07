@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/010768428_prev.mp3-0cb8097c50d7ab91ee77aa5d848b6f0e.mp3str"
+
+[deps]
+
+source_file="res://scenes/players/enemy1/010768428_prev.mp3"
+dest_files=[ "res://.import/010768428_prev.mp3-0cb8097c50d7ab91ee77aa5d848b6f0e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

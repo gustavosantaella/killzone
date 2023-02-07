@@ -80,4 +80,5 @@ current = true
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 6 )
+volume_db = -21.0
 autoplay = true
