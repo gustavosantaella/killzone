@@ -190,7 +190,7 @@ shape = SubResource( 72 )
 
 [node name="auido" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 6 )
-volume_db = -16.0
+volume_db = -13.0
 
 [connection signal="area_shape_entered" from="Area2D" to="." method="_on_Area2D_area_shape_entered"]
 [connection signal="area_shape_exited" from="Area2D" to="." method="_on_Area2D_area_shape_exited"]
