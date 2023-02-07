@@ -63,7 +63,7 @@ expand = true
 [node name="Solder1" parent="." groups=["players"] instance=ExtResource( 3 )]
 position = Vector2( -382, 403 )
 collision_mask = 0
-jump_time = 2.0
+jump_time = 5.0
 damage = 20
 
 [node name="Enemy1" parent="." groups=["enemies"] instance=ExtResource( 5 )]
@@ -80,5 +80,5 @@ current = true
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 6 )
-volume_db = -21.0
+volume_db = -19.0
 autoplay = true

@@ -15,6 +15,7 @@ onready var node_copy = self.duplicate()
 
 var is_attack = false
 var is_dead = false
+var follow_player := false
 
 var fast := 3 * pixel_by_m
 
@@ -45,11 +46,14 @@ func _process(_delta):
 	if player.is_dead:
 		audio.play()
 		enemy.play("initial")
+	if follow_player:
+		followPlayer()
 
 func _on_Area2D_area_shape_entered(_area_rid, _area, _area_shape_index, _local_shape_index):
 	if _area.get_parent().is_in_group('players'):
 		if _local_shape_index == 1:
-			followPlayer()
+			follow_player = true
+			audio.play()
 			
 		if _local_shape_index == 0:
 			is_attack = true
@@ -77,8 +81,7 @@ func _on_Area2D_area_shape_exited(_area_rid, _area, _area_shape_index, _local_sh
 
 func followPlayer():
 	if is_dead:
-		return 
-	audio.play()	
+		return 	
 	direction = (player.position - position).normalized()
 	enemy.flip_h = !(direction.x > 0 )
 	enemy.play("run")

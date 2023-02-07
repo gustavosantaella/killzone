@@ -15,7 +15,7 @@ var is_shooting:bool = false
 var is_dead:bool = false
 var can_be_attack:bool= false
 
-var jump_distance = 2 * pixel_by_m
+var jump_distance = 3 * pixel_by_m
 var jump_force = (-2 * jump_distance) / jump_time
 var fast := 3.5 * pixel_by_m
 var GRAVITY = (2 * jump_distance) / pow(jump_time, 2)

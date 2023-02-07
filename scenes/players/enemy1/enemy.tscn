@@ -161,8 +161,8 @@ extents = Vector2( 20.5, 33 )
 [sub_resource type="RectangleShape2D" id=60]
 extents = Vector2( 28, 31.5 )
 
-[sub_resource type="RectangleShape2D" id=66]
-extents = Vector2( 253.5, 20.5 )
+[sub_resource type="CircleShape2D" id=72]
+radius = 254.071
 
 [node name="Enemy1" type="KinematicBody2D" groups=["player"]]
 position = Vector2( 24, 4 )
@@ -185,8 +185,8 @@ position = Vector2( 424, 146 )
 shape = SubResource( 60 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 413.5, 157.5 )
-shape = SubResource( 66 )
+position = Vector2( 424, 145 )
+shape = SubResource( 72 )
 
 [node name="auido" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 6 )
